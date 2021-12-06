@@ -1,0 +1,131 @@
+/* clear style sheet */
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Sansita:wght@400;700&display=swap');
+
+/* variables here */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+:root {
+  /* colors */
+  --dark-grey: #606060;
+  --light-grey: #f3f3f3;
+  --main-black: #181717;
+  /* fonts */
+  --main-font: 'DM Sans', sans-serif;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--main-black);
+}
+
+/* I'm really not sure why I had to specify the links in particular to override the colour here? I have the clear style sheet up the top obviously which is cool, then I re-add the underline just for the .read-blog-link class, but I couldn't for the life of me figure out how else to get rid of the blue text for the links! I thought that the body selector above would have done it since this worked for the rest of the site... Very keen on your thoughts here since I'm sure I'm just doing something dumb :)*/
+a { 
+  color: var(--main-black);
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-logo {
+  height: 9vh;
+  margin-left: 50px;
+}
+
+nav ul {
+  margin-right: 50px;
+}
+
+footer {
+  height: 10vh;
+  line-height: 10vh;
+}
+
+.intro {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hello {
+  margin-left: 50px;
+  width: 40vw;
+  font-size: 30px;
+}
+
+.about-me {
+  font-size: 16px;
+  width: 40vw;
+  margin-right: 50px;
+  color: var(--dark-grey);
+}
+
+.about-me-headline {
+  display: flex;
+  justify-content: end;
+  margin-right: 50px;
+}
+
+.blog-container {
+  height: 30vh;
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-image {
+  height: 20vh;
+  width: 40vw;
+  margin-right: 50px;  
+}
+
+.blog-title-date {
+  margin-bottom:  10px;
+}
+
+.read-blog-link {
+  text-decoration: underline;
+}
+
+hr {
+  border: 3px solid var(--light-grey);
+  margin: 0 50px;
+}
+
+.blog-highlight-info {
+  margin: 20px 0;
+}
+
+
+.blog-two {
+  height: 30vh;
+}
+
+footer p {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+  font-size: 16px;
+  color: var(--dark-grey);
+}
+
+/* BEM convention: Block, Element, Modifier */
