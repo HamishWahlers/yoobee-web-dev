@@ -36,6 +36,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 25px;
 }
 
 .blog-logo {
@@ -45,6 +46,11 @@ header {
 
 nav ul {
   margin-right: 50px;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 footer {
@@ -72,12 +78,13 @@ footer {
   color: var(--dark-grey);
 }
 
-.about-me-headline {
-  display: flex;
+/* .about-me-headline {
+   display: flex;
   justify-content: end;
-  margin-right: 50px;
+  margin: 10vh 41vw;  this is a really ugly solution, I was struggling to get the About Me headline to sit in the same place above the text here, because I only had the one element (whereas in other places I had two next to each other which I had spaced with space-between). 
+  width: 40vw;
 }
-
+ */
 .blog-container {
   height: 30vh;
   margin-left: 50px;
@@ -86,10 +93,43 @@ footer {
   align-items: center;
 }
 
+.blog-page {
+  display: flex;
+  margin-left: 50px;
+  height: 30vh;
+}
+
+.about-container {
+  height: 30vh;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+}
+
+.about-image {
+  height: 30vh;
+  width: 30vw;
+}
+
+.about-info {
+  width: 40vw;
+  height: 30vh;
+}
+
 .blog {
   width: 40vw;
   display: flex;
   flex-direction: column;
+}
+
+.blog-one-image {
+  width: 20vw;
+}
+
+.about-blog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .blog-image {
