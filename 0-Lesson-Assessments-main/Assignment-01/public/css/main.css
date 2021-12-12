@@ -173,6 +173,10 @@ hr {
   justify-content: space-between;
 }
 
+.show-mobile {
+  display: none;
+}
+
 footer p {
   display: flex;
   justify-content: flex-end;
@@ -181,6 +185,188 @@ footer p {
   color: var(--dark-grey);
 }
 
+@media all and (max-width: 1000px) {
 
+  body {
+    width: 900px;
+  }
+
+  .hide-tablet {
+    display: none;
+  }
+
+  .blog-image {
+    width: 450px;
+    height: 250px;
+  }
+
+  .blog {
+    width: 600px;
+  }
+
+  .about-me {
+    margin-right: 0px;
+  }
+
+  .intro {
+    height: 200px;
+    width:  800px;
+  }
+
+  .intro .about-me h2 {
+    text-align: end;
+  }
+
+  .blog-page {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 800px;
+    height: 400px;
+  }
+
+  .blog-highlight-info {
+    width: 600px;
+  }
+
+  header {
+    width: 800px;
+  }
+
+  .about-container {
+    height: 450px;
+  }
+
+  .about-blog {
+    flex-direction: column;
+    width: 800px;
+    height: 250px;
+  }
+
+  .about-image {
+    width: 600px;
+    height: 300px;
+    margin-bottom: 50px;
+  }
+
+  .about-info {
+    width: 600px;
+  }
+
+  hr {
+    width: 800px;
+  }
+
+}
+
+@media all and (max-width: 750px) {
+
+  .hide-mobile {
+    display: none;
+  }
+
+  header {
+    width: 600px;
+  }
+
+  /* Really wasn't sure where the margin-right was coming from here... I checked out the intro class and I couldn't see any margin being applied, but there must be some coming from somewhere!*/ 
+  .intro {
+    width: 600px;
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 50px;
+  }
+
+  .blog-intro {
+    justify-content: start;
+    flex-direction: row;
+    margin-left: 50px;
+  }
+
+  .hello {
+    margin: 25px 0px;
+    width: 600px;
+  }
+  
+  .blog-container {
+    width: 600px;
+    height: 400px;
+    flex-direction: column-reverse;
+    margin-top: 120px;
+  }
+
+
+  .blog-page {
+    width: 600px;
+  }
+  
+  /* Having some difficulty getting the three components in here to sit the way I want to... Not really sure how to have the two on the left show above/below each other and then have the read this blog link appear in its own column  -experiemented a bit with flex wrap but couldn't quite crack it
+
+  Never mind! I kinda managed to get it working..? */
+  .blog {
+    flex-wrap: wrap;
+    height: 300px;
+    width: 600px;
+  }
+
+  .blog-title-date {
+    height: 100px;
+    width: 200px;
+  }
+
+  .read-blog-link {
+    height: 50px;
+    width: 200px;
+  }
+
+  .blog-image {
+    height: 200px;
+    width: 550px;
+    margin-left: 50px;
+    margin-bottom: 25px;
+  }
+
+  .about-container {
+    height: 450px;
+  }
+
+  .about-blog {
+    flex-direction: column;
+    width: 600px;
+    height: 250px;
+  }
+
+  .about-image {
+    width: 500px;
+    height: 300px;
+    margin-bottom: 50px;
+  }
+
+  .about-info {
+    width: 500px;
+  }
+
+  .show-mobile {
+    display: block;
+  }
+
+  .recent-blogs-title {
+    margin-top: 50px;
+  }
+
+  .recent-blogs-list {
+    width: 600px;
+    flex-direction: column;
+  }
+
+  footer p {
+    width: 600px;
+    margin-right: 0px;
+  }
+
+  hr {
+    width: 600px;
+  }
+}
 
 /* BEM convention: Block, Element, Modifier */
