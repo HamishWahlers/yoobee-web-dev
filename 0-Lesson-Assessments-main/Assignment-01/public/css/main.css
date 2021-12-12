@@ -27,7 +27,7 @@ body {
 }
 
 /* I'm really not sure why I had to specify the links in particular to override the colour here? I have the clear style sheet up the top obviously which is cool, then I re-add the underline just for the .read-blog-link class, but I couldn't for the life of me figure out how else to get rid of the blue text for the links! I thought that the body selector above would have done it since this worked for the rest of the site... Very keen on your thoughts here since I'm sure I'm just doing something dumb :)*/
-a { 
+a {
   color: var(--main-black);
 }
 
@@ -91,12 +91,16 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .blog-page {
   display: flex;
+  justify-content: space-between;
   margin-left: 50px;
   height: 30vh;
+  margin-bottom: 50px;
 }
 
 .about-container {
@@ -117,13 +121,9 @@ footer {
 }
 
 .blog {
-  width: 40vw;
+  width: 30vw;
   display: flex;
   flex-direction: column;
-}
-
-.blog-one-image {
-  width: 20vw;
 }
 
 .about-blog {
@@ -133,17 +133,18 @@ footer {
 }
 
 .blog-image {
-  height: 20vh;
+  height: 30vh;
   width: 40vw;
-  margin-right: 50px;  
+  margin-right: 50px;
 }
 
 .blog-title-date {
-  margin-bottom:  10px;
+  margin-bottom: 10px;
 }
 
 .read-blog-link {
   text-decoration: underline;
+  font-weight: bold;
 }
 
 hr {
@@ -155,9 +156,21 @@ hr {
   margin: 20px 0;
 }
 
-
 .blog-two {
   height: 30vh;
+}
+
+.recent-blogs-title {
+  margin-left: 50px;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  font-weight: bold;
+}
+
+.recent-blogs-list {
+  display: flex;
+  margin: 50px 50px;
+  justify-content: space-between;
 }
 
 footer p {
@@ -167,5 +180,7 @@ footer p {
   font-size: 16px;
   color: var(--dark-grey);
 }
+
+
 
 /* BEM convention: Block, Element, Modifier */
