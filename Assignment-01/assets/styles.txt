@@ -1,8 +1,0 @@
-Light Grey
-background: #F3F3F3; 
-
-Dark Grey
-background: #606060; 
-
-Main Black
-background: #181717; 
