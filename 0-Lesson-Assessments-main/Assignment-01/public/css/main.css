@@ -39,6 +39,10 @@ header {
   margin-top: 25px;
 }
 
+header nav ul li a {
+  padding: 5px;
+}
+
 .blog-logo {
   height: 9vh;
   margin-left: 50px;
@@ -46,6 +50,7 @@ header {
 
 nav ul {
   margin-right: 50px;
+  display: flex;
 }
 
 nav ul li:hover {
@@ -275,6 +280,12 @@ footer p {
     flex-direction: column;
     justify-content: space-evenly;
     margin-top: 50px;
+  }
+
+  .intro .hello h1 {
+
+    text-align: center;
+
   }
 
   .blog-intro {
